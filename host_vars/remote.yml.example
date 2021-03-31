@@ -6,9 +6,9 @@ git_config:
   - { name: "user.email", value: "'user email'" }
 
 repos:
-  - {
-      dest: "dockercloud-hello-world",
-      repo: "git@github.com:docker-archive/dockercloud-hello-world.git",
-    }
+  - { dest: "platform", repo: "git@github.com:OnlineFuels/platform.git" }
+  - { dest: "platform-admin", repo: "git@github.com:OnlineFuels/platform-admin.git" }
+  - { dest: "platform-cron", repo: "git@github.com:OnlineFuels/platform-cron.git" }
+  - { dest: "platform-de", repo: "git@github.com:OnlineFuels/platform-de.git" }
 
 swap_in_gb: 2
