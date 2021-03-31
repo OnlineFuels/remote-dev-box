@@ -7,7 +7,7 @@ remote_user: ec2-user
 env_vars:
   AWS_ACCESS_KEY_ID: **PLEASE FILL IN**
   AWS_SECRET_ACCESS_KEY: **PLEASE FILL IN**
-  AWS_REGION: eu-west-2
+  AWS_REGION: eu-west-1
 
 github_access_token: **PLEASE FILL IN**
 
@@ -15,9 +15,8 @@ remote_dev_box_key_path: "{{ playbook_dir }}/{{ host_name }}-key"
 
 instance: {
   # Amazon Linux 2 AMI (HVM), SSD Volume Type (64-bit x86)
-  ami: "ami-0e80a462ede03e653", # eu-west-2
-  # ami: "ami-0fc970315c2d38f01", # eu-west-1
-  type: t2.micro
+  ami: "ami-0ffea00000f287d30", # eu-west-1
+  type: t3a.medium
 }
 
 # if attaching own VPC make sure it has an IGW attached
